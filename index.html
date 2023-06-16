@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop (Test 1)</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      #drop-target {
+        border: 2px dotted darkgoldenrod;
+        width: 200px;
+        height: 30px;
+        padding: 1em;
+        font-size: 18px;
+        overflow: scroll;
+      }
+
+      .drop-target-over {
+        background: rgba(156, 167, 96, 0.1);
+      }
+
+      .item-container {
+        width: 150px;
+        padding: 0;
+      }
+
+      .dragged-item {
+        display: block;
+        margin-bottom: 5px;
+        padding: 2px;
+        color: black;
+        background: white;
+        font-size: 18px;
+        border: 1px solid gray;
+      }
+    </style>
+    <script src="test1.js"></script>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: row; gap: 2em">
+      <div class="item-container">
+        <span id="item-1" class="dragged-item">Apple</span>
+        <span id="item-2" class="dragged-item">Banana</span>
+        <span id="item-3" class="dragged-item">Orange</span>
+      </div>
+      <div id="drop-target"></div>
+    </div>
+  </body>
+</html>
